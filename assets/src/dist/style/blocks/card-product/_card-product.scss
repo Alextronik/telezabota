@@ -1,0 +1,36 @@
+.card-product {
+	&__title {
+		background-color: $bg-secondary;
+		color: white;
+		line-height: 1.2;
+		padding: 0.875rem 1.125rem;
+		margin-bottom: 0;
+		font-weight: normal;
+		font-size: 1rem;
+		overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    transition: $animation-time-sm;
+
+	}
+	&__img {
+		overflow: hidden;
+		img {
+			width: 100%;
+			transition: $animation-time-sm;
+		}
+	}
+	&:hover {
+		.card-product__title {
+			background-color: darken($bg-secondary, 10%);
+		}
+		.card-product__img {
+			img {
+				opacity: 0.8;
+				transform: scale(1.2);
+			}
+		}
+	}
+}
+
+@import "card-product-mediaqueries";

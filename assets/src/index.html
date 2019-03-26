@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Телезабота</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <script src="dist/js/critical.js"></script>
+</head>
+
+<body>
+    <!--Импортируем header-->
+    //= dist/template/header/header.html
+    <!--/Импортируем header-->
+    <ul id="main-banner" class="main-slider">
+        <li class="main-slider__itm">
+            <div class="main-slider__img">
+                <img src="dist/img/main-slider-img.png" alt="ТСВ" class="img-fluid">
+            </div>  
+        </li>
+        <li class="main-slider__itm">
+            <div class="main-slider__img">
+                <img src="dist/img/main-slider-img.png" alt="ТСВ" class="img-fluid">
+            </div>  
+        </li>
+        <li class="main-slider__itm">
+            <div class="main-slider__img">
+                <img src="dist/img/main-slider-img.png" alt="ТСВ" class="img-fluid">
+            </div>  
+        </li>
+    </ul>
+	<!--Импортируем футер-->
+	//= dist/template/footer/footer.html
+	<!--/Импортируем футер-->
+    <!--Импортируем модальное окно-->
+    //= dist/template/modal-feedback/modal-feedback.html
+    <!--/Импортируем модальное окно-->
+    <script src="dist/js/main.js" async></script>
+    <script>
+        // главный баннер
+        $('#main-banner').slick({
+          dots: false,
+          infinite: true,
+          autoplaySpeed: 10000,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: true,
+          autoplay: true,
+          arrows: false
+        });
+    </script>
+</body>
+
+</html>
