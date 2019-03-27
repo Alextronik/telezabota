@@ -14,23 +14,86 @@
     <!--Импортируем header-->
     //= dist/template/header/header.html
     <!--/Импортируем header-->
-    <ul id="main-banner" class="main-slider">
-        <li class="main-slider__itm">
-            <div class="main-slider__img">
-                <img src="dist/img/main-slider-img.png" alt="ТСВ" class="img-fluid">
-            </div>  
-        </li>
-        <li class="main-slider__itm">
-            <div class="main-slider__img">
-                <img src="dist/img/main-slider-img.png" alt="ТСВ" class="img-fluid">
-            </div>  
-        </li>
-        <li class="main-slider__itm">
-            <div class="main-slider__img">
-                <img src="dist/img/main-slider-img.png" alt="ТСВ" class="img-fluid">
-            </div>  
+    <ul id="main-banner" class="main-banner">
+        <li class="main-banner__itm" style="background-image: url(dist/img/main-banner-img-1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 main-banner__container">
+                        <span class="main-banner__title">Консультация терапевта</span>
+                        <span class="main-banner__caption">500р</span>
+                        <button class="btn main-banner__btn">Заказать услугу</button>
+                    </div>
+                </div>
+            </div>
         </li>
     </ul>
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-3">
+                    <div class="index-advantages">
+                        <img class="img-fluid index-advantages__img" src="dist/img/icon.png" alt="">
+                        <div class="index-advantages__content">
+                            <h5 class="index-advantages__title">
+                                Компетентные врачи
+                            </h5>
+                            <p class="index-advantages__text">
+                                Консультируйтесь с опытными врачами, а не с форумами нарадной медицины
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="index-advantages">
+                        <img class="img-fluid index-advantages__img" src="dist/img/icon.png" alt="">
+                        <div class="index-advantages__content">
+                            <h5 class="index-advantages__title">
+                                Конфиденциально
+                            </h5>
+                            <p class="index-advantages__text">
+                                Врач знает о вас только то, что вы сами сообщите. Мы никуда не передадим ваши данные
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="index-advantages">
+                        <img class="img-fluid index-advantages__img" src="dist/img/icon.png" alt="">
+                        <div class="index-advantages__content">
+                            <h5 class="index-advantages__title">
+                                С историей
+                            </h5>
+                            <p class="index-advantages__text">
+                                После каждой консультации врач присылает вам отчёт с рекомендациями
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section_bg_grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="index-slider-section">
+                        <h2 class="index-slider-section__caption">
+                            Консультации от тщательно подобранных и проверенных специалистов с большим опытом работы
+                        </h2>
+                        <div id="worker-slider" class="slider">
+                            <div class="slider-itm">
+                                <div class="slider-itm__content">
+                                    <span class="slider-itm__caption">Терапевт</span>
+                                    <h2 class="slider-itm__title">Кузнецова Елизавета Петровна</h2>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 	<!--Импортируем футер-->
 	//= dist/template/footer/footer.html
 	<!--/Импортируем футер-->
@@ -38,20 +101,6 @@
     //= dist/template/modal-feedback/modal-feedback.html
     <!--/Импортируем модальное окно-->
     <script src="dist/js/main.js" async></script>
-    <script>
-        // главный баннер
-        $('#main-banner').slick({
-          dots: false,
-          infinite: true,
-          autoplaySpeed: 10000,
-          speed: 300,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          adaptiveHeight: true,
-          autoplay: true,
-          arrows: false
-        });
-    </script>
 </body>
 
 </html>

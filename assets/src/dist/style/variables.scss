@@ -1,20 +1,24 @@
 //ПЕРЕОПРЕДЕЛЕНИЕ ДЕФОЛТНЫХ ЗНАЧЕНИЙ ПЕРЕМЕННЫХ BOOTSTRAP 4 
 
 //главный цвет
-$primary: #485e88;
-$bg-secondary: #37496d;
-$secondary: #d1d2d4;
-$orange: #f36f21;
+$primary: rgb(55, 71, 0);
+$font-size-base: 0.875rem;
+$line-height-base: 1.2;
 //главный шрифт
-$font-family-base: Myriad Pro,  Arial, sans-serif;
-$navbar-padding-y: 0;
-$navbar-nav-link-padding-x: 1.125rem;
+$font-family-base: 'PT Sans',  Arial, sans-serif;
+$navbar-padding-y: 0.625rem;
+$navbar-padding-x: 0;
+$navbar-light-color: white;
+$navbar-light-hover-color: lighten($primary, 50%);
+$navbar-light-active-color: lighten($primary, 50%);
+$navbar-nav-link-padding-x: 1.25rem;
 $input-border-radius: 0;
 $btn-padding-x: 1.5rem;
 $btn-padding-y: 0.625rem;
 $btn-border-radius: 0.375rem;
 $navbar-toggler-border-radius: 0;
 $border-radius: 0;
+
 
 
 // ПЕРЕОПРЕДЕЛЕНИЕ ДЕФОЛТНЫХ ЗНАЧЕНИЙ ПЕРЕМЕННЫХ SLICK-SLIDER 

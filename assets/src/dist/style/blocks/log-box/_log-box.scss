@@ -1,0 +1,19 @@
+.log-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	&__avatar {
+		width: 26px;
+		height: 26px;
+		border: 1px solid $primary;
+		border-radius: 50%;
+		margin-right: 0.25rem;
+	}
+	&__name,
+	&__sign {
+		font-size: 0.75rem;
+	}
+	&__sign {
+		color: black;
+	}
+}

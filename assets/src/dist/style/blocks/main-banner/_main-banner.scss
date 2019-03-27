@@ -1,0 +1,51 @@
+.main-banner {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	&__itm {
+		min-height: 410px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		padding-bottom: 5.875rem;
+		padding-top: 5.25rem;
+	}
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__title,
+	&__caption {
+		display: inline-block;
+		font-family: 'Lobster';
+	}
+	&__title {
+		font-size: 3.75rem;
+		color: rgb(46, 73, 99);
+		margin-bottom: 1.25rem;
+	}
+	&__caption {
+		font-size: 3.75rem;
+		color: rgb(0, 86, 79);
+		margin-bottom: 1.875rem;
+	}
+	&__btn {
+		background-color: rgb(227, 55, 100);
+  		box-shadow: 0px 2px 5px 0px rgba(232, 109, 141, 0.75);
+  		font-size: 1.125rem;
+  		color: white;
+  		padding: 1rem 4.75rem;
+  		border-radius: 40px/80px;;
+  		&:hover,
+  		&:focus {
+  			background-color: darken(rgb(227, 55, 100), 10%);
+  			color: white;
+  		}
+  		&:focus {
+  			box-shadow: 0 0 0 0.2rem rgba(232, 109, 141, 0.75);
+  		}
+	}
+}
+
+

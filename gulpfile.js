@@ -132,7 +132,7 @@ gulp.task('image:build', function () {
             jpegrecompress({
                 progressive: true,
                 max: 90,
-                min: 80
+                min: 70
             }),
             pngquant(),
             imagemin.svgo({plugins: [{removeViewBox: false}]})

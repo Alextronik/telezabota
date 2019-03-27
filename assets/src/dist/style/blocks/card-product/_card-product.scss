@@ -1,6 +1,6 @@
 .card-product {
 	&__title {
-		background-color: $bg-secondary;
+		background-color: white;
 		color: white;
 		line-height: 1.2;
 		padding: 0.875rem 1.125rem;
@@ -22,7 +22,7 @@
 	}
 	&:hover {
 		.card-product__title {
-			background-color: darken($bg-secondary, 10%);
+			background-color: darken(white, 10%);
 		}
 		.card-product__img {
 			img {

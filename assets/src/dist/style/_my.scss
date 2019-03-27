@@ -5,7 +5,6 @@
 //ИКОНКИ
 @import "icons/icons";
 
-
 //ОБЩИЕ СТИЛИ ВСЕХ СТРАНИЦ
 
 //типографика
@@ -20,7 +19,7 @@
 // лого
 @import "blocks/logo/logo";
 // главный слайдер
-@import "blocks/main-slider/main-slider";
+@import "blocks/main-banner/main-banner";
 // кнопки
 @import "blocks/btn/btn";
 // контент страницы
@@ -31,6 +30,11 @@
 @import "blocks/footer/footer";
 // модальное окно
 @import "blocks/modal/modal";
+// блок входа
+@import "blocks/log-box/log-box";
+// секция
+@import "blocks/section/section";
+
 
 // УТИЛИТЫ
 // пространство
@@ -41,6 +45,9 @@
 // главная
 @import "pages/index/index";
 
+a {
+	text-decoration: underline;
+}
 html {
 	height: 100%;
 }
