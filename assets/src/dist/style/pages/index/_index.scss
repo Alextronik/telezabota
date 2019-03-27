@@ -24,6 +24,7 @@
 .index-slider-section {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	&__caption {
 		width: 45%;
 		font-size: 1.875rem;
@@ -31,9 +32,29 @@
   		font-style: italic;
   		font-weight: normal;
 	}
+	.slider {
+		width: 50%;
+	}
 }
 
 
+.index-about {
+	padding: 2rem 1.25rem;
+	box-shadow: 0px 0px 15px 0px rgba(169, 169, 169, 0.75); 
+	display: flex;
+	justify-content: space-between;
+	&__img {
+		flex: calc(50% - 15px) 0 0;
+		width: calc(50% - 15px);
+	}
+	&__text {
+		flex: calc(50% - 15px) 0 0;
+		width: calc(50% - 15px);
+	}
+	&__title {
+		font-size: 2rem;
+	}
+}
 
 
 

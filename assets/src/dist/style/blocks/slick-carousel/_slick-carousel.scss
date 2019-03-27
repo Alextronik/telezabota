@@ -1,8 +1,7 @@
 .slick-next, .slick-prev {
-	top: 100%;
-	transform: translate(0,0);
-	height: 30px;
-	width: 30px;
+    top: 50%;
+	height: 64px;
+	width: 33px;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	&:hover, &:focus {
@@ -19,18 +18,18 @@
 }
  
 .slick-next {
-	right: 15px;
-	background-image: url(../img/icon-arrow-next.png);
+	right: -50px;
+	background-image: url(../img/arrow-next.png);
 	&:hover, &:focus {
-        background-image: url(../img/icon-arrow-next.png);
+        background-image: url(../img/arrow-next.png);
     }
 }
 
 .slick-prev {
-	left: 15px;
-	background-image: url(../img/icon-arrow-prev.png);
+	left: -50px;
+	background-image: url(../img/arrow-prev.png);
 	&:hover, &:focus {
-         background-image: url(../img/icon-arrow-prev.png);
+         background-image: url(../img/arrow-prev.png);
     }
 }
 

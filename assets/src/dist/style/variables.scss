@@ -1,7 +1,7 @@
 //ПЕРЕОПРЕДЕЛЕНИЕ ДЕФОЛТНЫХ ЗНАЧЕНИЙ ПЕРЕМЕННЫХ BOOTSTRAP 4 
 
 //главный цвет
-$primary: rgb(55, 71, 0);
+$primary: #749500;
 $font-size-base: 0.875rem;
 $line-height-base: 1.2;
 //главный шрифт
@@ -28,7 +28,8 @@ $slick-font-family: $font-family-base;
 //символы в стрелочках
 $slick-next-character: ' ';
 $slick-prev-character: ' ';
-
+$slick-dot-size: 3rem;
+$slick-dot-color-active: darken($primary, 18%);
 // СВОИ ПЕРЕМЕННЫЕ
 
 

@@ -1,0 +1,28 @@
+.workers-itm {
+	display: flex;
+	background-color: white;
+	padding: 1.625rem 2.5rem;
+	position: relative;
+	min-height: 370px;
+	&:focus {
+		outline: none;
+	}
+	&__img {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	&__content {
+		max-width: 55%;
+
+	}
+	&__caption {
+		color: $primary;
+		font-style: italic;
+	}
+	&__title {
+		font-size: 1.5rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+}
