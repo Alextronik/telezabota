@@ -2,6 +2,14 @@
    
 }
 
-@media (max-width: $screen-width-sm) {
-   
+@media (max-width: $screen-width-xs) {
+	.header {
+		&__container {
+			flex-direction: column;
+		}
+		&__consult {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+	}
 }

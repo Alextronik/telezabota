@@ -1,0 +1,11 @@
+@media (max-width: $screen-width-xs) {
+	.workers-itm {
+		padding: 1.5rem 1rem;
+		&__img {
+			position: static;
+		}
+		&__content {
+			max-width: none;
+		}
+	}
+}

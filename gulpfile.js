@@ -18,14 +18,16 @@ var path = {
         js:    'assets/production/dist/js/',
         css:   'assets/production/dist/css/',
         img:   'assets/production/dist/img/',
-        fonts: 'assets/production/dist/fonts/'
+        fonts: 'assets/production/dist/fonts/',
+        server: 'assets/production/dist/server/'
     },
     productionSrc: {
         html:  'assets/build/*.html',
         js:    ['assets/build/dist/js/main.js', 'assets/build/dist/js/critical.js'],
         css:   'assets/build/dist/css/main.css',
         img:   'assets/build/dist/img/**/*.*',
-        fonts: 'assets/build/dist/fonts/**/*.*'
+        fonts: 'assets/build/dist/fonts/**/*.*',
+        server: 'assets/build/dist/server/**/*.*'
     },
     productionClean:     './assets/production',
     build: {
@@ -33,21 +35,24 @@ var path = {
         js:    'assets/build/dist/js/',
         css:   'assets/build/dist/css/',
         img:   'assets/build/dist/img/',
-        fonts: 'assets/build/dist/fonts/'
+        fonts: 'assets/build/dist/fonts/',
+        server: 'assets/build/dist/server/'
     },
     src: {
         html:  'assets/src/*.html',
         js:    ['assets/src/dist/js/main.js', 'assets/src/dist/js/critical.js'],
         style: 'assets/src/dist/style/main.scss',
         img:   'assets/src/dist/img/**/*.*',
-        fonts: 'assets/src/dist/fonts/**/*.*'
+        fonts: 'assets/src/dist/fonts/**/*.*',
+        server: 'assets/src/dist/server/**/*.*'
     },
     watch: {
         html:  'assets/src/**/*.html',
         js:    'assets/src/dist/js/**/*.js',
         css:   'assets/src/dist/style/**/**/*.scss',
         img:   'assets/src/dist/img/**/*.*',
-        fonts: 'assets/srs/dist/fonts/**/*.*'
+        fonts: 'assets/srs/dist/fonts/**/*.*',
+        server: 'assets/src/dist/server/**/*.*'
     },
     clean:     './assets/build'
 };
@@ -140,6 +145,13 @@ gulp.task('image:build', function () {
         .pipe(gulp.dest(path.build.img)); // выгрузка готовых файлов
 });
 
+
+// перенос серверных файлов
+gulp.task('server:build', function() {
+    gulp.src(path.src.server)
+        .pipe(gulp.dest(path.build.server));
+});
+
 // удаление каталога build 
 gulp.task('clean:build', function () {
     del.sync(path.clean);
@@ -199,6 +211,12 @@ gulp.task('image:production', function () {
     gulp.src(path.productionSrc.img) // путь с исходниками картинок
         .pipe(gulp.dest(path.production.img)); // выгрузка готовых файлов
 });
+// перенос серверных скриптов в продакш
+gulp.task('server:production', function () {
+    gulp.src(path.productionSrc.server) // путь с исходниками серверных скриптов
+        .pipe(gulp.dest(path.production.server)); // выгрузка готовых файлов
+});
+
 // очистка кэша
 gulp.task('cache:clear', function () {
   cache.clearAll();
@@ -211,7 +229,8 @@ gulp.task('build', [
     'css:build',
     'js:build',
     'fonts:build',
-    'image:build'
+    'image:build',
+    'server:build'
 ]);
 // продакшн
 gulp.task('production', [
@@ -220,7 +239,8 @@ gulp.task('production', [
     'css:production',
     'js:production',
     'fonts:production',
-    'image:production'
+    'image:production',
+    'server:production'
 ]);
 
 // запуск задач при изменении файлов

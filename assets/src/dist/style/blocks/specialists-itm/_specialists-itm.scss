@@ -1,0 +1,20 @@
+.specialists-itm {
+	display: flex;
+	box-shadow: 0px 0px 15px 0px rgba(169, 169, 169, 0.75); 
+	padding: 1.25rem 2rem;
+
+	&__img {
+		width: 30%;
+		flex: 30% 0 0;
+		margin-right: 2rem;
+		position: relative;
+		bottom: -1.25rem;
+		img {
+			width: 100%;
+		}
+	}
+	&__content {
+		width: calc(70% - 2rem);
+		flex: calc(70% - 2rem) 0 0;
+	}
+}

@@ -5,18 +5,18 @@
                 <div class="col-12">
                     <div class="header__container">
                         <a href="/" class="logo header__logo">
-                            <img src="dist/img/logo-header.png" alt="Телезабота" class="img-fluid ogo__img">
+                            <img src="dist/img/logo-header.png" alt="Телезабота" class="img-fluid logo__img">
                         </a>
-                        <button class="btn btn_radius_1 header__consult">Получить консультацию</button>
+                        <button type="button" class="btn btn_radius_1 header__consult" data-toggle="modal" data-target="#modal-feedback">Получить консультацию</button>
                         <div class="header-phone">
                             <h5 class="header-phone__title">Телефон для справок</h5>
                             <a href="tel:+78008000000" class="header-phone__phone">8 800 800-00-00</a>
                         </div>
-                        <div class="header-basket">
+                        <div class="header-basket  d-none d-xl-block">
                             <h5 class="header-basket__title">Вы выбрали</h5>
                             <a href="#" class="header-basket__text">3 услуги на сумму 1200 руб.</a>
                         </div>
-                        <div class="log-box header__login">
+                        <div class="log-box header__login d-none d-xl-flex">
                             <div class="log-box__profile">
                                 <img src="dist/img/avatar.png" alt="Паравозов" class="img-fluid log-box__avatar">
                                 <a class="log-box__name" href="#">Александр Николаевич Паравозов</a>
@@ -32,8 +32,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                        <button class="navbar-toggler" type="button">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -64,3 +64,6 @@
         </div>
     </div>
 </header>
+<div class="mobile-menu">
+    
+</div>

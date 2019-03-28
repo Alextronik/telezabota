@@ -11,6 +11,8 @@
 //= ../../../../node_modules/bootstrap/js/dist/modal.js
 // коллапс
 //= ../../../../node_modules/bootstrap/js/dist/collapse.js
+// тосты
+//= ../../../../node_modules/bootstrap/js/dist/toast.js
 
 // Импортируем телефонную валидацию
 //= ../../../../node_modules/jquery.maskedinput/src/jquery.maskedinput.js
