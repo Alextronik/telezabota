@@ -1,0 +1,32 @@
+.detailed-card {
+	display: flex;
+	&__img {
+		width: 33.3333%;
+		flex: 33.3333% 0 0;
+		margin-right: 2rem;
+		img {
+			width: 100%;
+		}
+	}
+	&__caption {
+		font-size: 1.125rem;
+		font-weight: bold;
+		margin-right: 2rem;
+		display: inline-block;
+		margin-bottom: 1rem;
+	}
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.btn {
+			margin-bottom: 1rem;
+		}
+	}
+	&__content {
+		width: calc(66.6667% - 2rem);
+	}
+}
+
+@import "detailed-card-mediaqueries";

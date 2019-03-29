@@ -8,9 +8,11 @@
 		flex: 30% 0 0;
 		margin-right: 2rem;
 		position: relative;
-		bottom: -1.25rem;
+		
 		img {
+			position: absolute;
 			width: 100%;
+			bottom: -1.25rem;
 		}
 	}
 	&__content {
@@ -18,3 +20,5 @@
 		flex: calc(70% - 2rem) 0 0;
 	}
 }
+
+@import "specialists-itm-mediaqueries";

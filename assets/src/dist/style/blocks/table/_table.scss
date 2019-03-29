@@ -1,0 +1,21 @@
+.table {
+	thead {
+		th {
+			background-color: $primary;
+			color: white;
+			border-width: 1px;
+			border-color: $primary;
+			&:nth-child(2) {
+				text-align: center;
+			}
+		}
+	}
+	tbody {
+		td {
+			font-weight: bold;
+			&:nth-child(2) {
+				text-align: center;
+			}
+		}
+	}
+}

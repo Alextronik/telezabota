@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Телезабота</title>
+    <title>Прейскурант</title>
     <link rel="stylesheet" href="dist/css/main.css">
     <script src="dist/js/critical.js"></script>
 </head>
@@ -14,20 +14,73 @@
     <!--Импортируем header-->
     //= dist/template/header/header.html
     <!--/Импортируем header-->
-    <ul id="main-banner" class="main-banner">
-        <li class="main-banner__itm" style="background-image: url(dist/img/main-banner-img-1.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 col-lg-12 main-banner__container">
-                        <span class="main-banner__title">Консультация терапевта</span>
-                        <span class="main-banner__caption">500р</span>
-                        <button class="btn main-banner__btn">Заказать услугу</button>
+    <div class="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    //= dist/template/breadcrumb/breadcrumb.html
+                </div>
+                <div class="col-lg-3">
+                    <div class="aside row flex-md-row flex-column-reverse">
+                        <div class="aside__element col-lg-12 col-md-8">
+                            //= dist/template/menu-info/menu-info.html
+                        </div>
+                        <div class="aside__element col-lg-12 col-md-4">
+                            <a href="#" class="banner-link">
+                                <img class="img-fluid" src="dist/img/ad-img.jpg" alt="Телезабота">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <h1 class="mb-4">
+                        Прейскурант на услуги телемедицины
+                    </h1>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Длительность консультации</th>
+                                            <th scope="col">Стоимость</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">10 мин.</td>
+                                            <td>300 руб.</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">10 мин.</td>
+                                            <td>300 руб.</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">10 мин.</td>
+                                            <td>300 руб.</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">10 мин.</td>
+                                            <td>300 руб.</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">10 мин.</td>
+                                            <td>300 руб.</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">10 мин.</td>
+                                            <td>300 руб.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </li>
-    </ul>
-    <section class="section">
+        </div>
+    </div>
+    <section class="mt-auto section  section_bg_grey">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-xl-3 col-md-4 mb-4 mb-md-0">
@@ -68,160 +121,6 @@
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section section_bg_grey">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="index-slider-section">
-                        <h2 class="index-slider-section__caption">
-                            Консультации от тщательно подобранных и проверенных специалистов с большим опытом работы
-                        </h2>
-                        <div id="workers-slider" class="slider workers">
-                            <div class=" workers-itm">
-                                <div class="workers-itm__content">
-                                    <span class="workers-itm__caption">Терапевт</span>
-                                    <h2 class="workers-itm__title">Кузнецова Елизавета Петровна</h2>
-                                    <p class="workers-itm__info"><strong>Опыт работы: </strong>10 лет</p>
-                                    <p class="workers-itm__info"><strong>Образование: </strong>Окончила Санкт-Петербургскую государственную медицинскую академию им. И.И. Мечникова по специальности "Лечебное дело". Закончила интернатуру в СЗГМУ им И.И. Мечникова по специальности "Терапия".</p>
-                                </div>
-                                <img src="dist/img/worker-img-1.png" alt="Терапевт" class="workers-itm__img">
-                            </div>
-                            <div class=" workers-itm">
-                                <div class="workers-itm__content">
-                                    <span class="workers-itm__caption">Терапевт</span>
-                                    <h2 class="workers-itm__title">Кузнецова Елизавета Петровна</h2>
-                                    <p class="workers-itm__info"><strong>Опыт работы: </strong>10 лет</p>
-                                    <p class="workers-itm__info"><strong>Образование: </strong>Окончила Санкт-Петербургскую государственную медицинскую академию им. И.И. Мечникова по специальности "Лечебное дело". Закончила интернатуру в СЗГМУ им И.И. Мечникова по специальности "Терапия".</p>
-                                </div>
-                                <img src="dist/img/worker-img-1.png" alt="Терапевт" class="workers-itm__img">
-                            </div>
-                            <div class=" workers-itm">
-                                <div class="workers-itm__content">
-                                    <span class="workers-itm__caption">Терапевт</span>
-                                    <h2 class="workers-itm__title">Кузнецова Елизавета Петровна</h2>
-                                    <p class="workers-itm__info"><strong>Опыт работы: </strong>10 лет</p>
-                                    <p class="workers-itm__info"><strong>Образование: </strong>Окончила Санкт-Петербургскую государственную медицинскую академию им. И.И. Мечникова по специальности "Лечебное дело". Закончила интернатуру в СЗГМУ им И.И. Мечникова по специальности "Терапия".</p>
-                                </div>
-                                <img src="dist/img/worker-img-1.png" alt="Терапевт" class="workers-itm__img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="section__title">Популярные услуги</h2>
-                    <div id="product-slider" class="margin-minus-0-15">
-                        <div class="padding-30-15">
-                            //= dist/template/card-product/card-product.html
-                        </div>
-                        <div class="padding-30-15">
-                            //= dist/template/card-product/card-product.html
-                        </div>
-                        <div class="padding-30-15">
-                            //= dist/template/card-product/card-product.html
-                        </div>
-                        <div class="padding-30-15">
-                            //= dist/template/card-product/card-product.html
-                        </div>
-                        <div class="padding-30-15">
-                            //= dist/template/card-product/card-product.html
-                        </div>
-                        <div class="padding-30-15">
-                            //= dist/template/card-product/card-product.html
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="index-about">
-                        <div class="index-about__img">
-                            <img class="img-fluid" src="dist/img/index-about-img.jpg" alt="Телезабота">
-                        </div>
-                        <div class="index-about__text">
-                            <h2 class="index-about__title">О сервисе</h2>
-                            <p>С помощью данного сайта Вы можете получить консультацию специалиста по интересующему Вас вопросу в отношении:</p>
-                            <p>
-                                - кормления, гимнастики, ухода за ребенком;
-                                <br>
-                                - национального календаря прививок, вакцинации детей;
-                                <br>
-                                - сроках посещения врачей, необходимых осмотрах, и т.п.;
-                                <br>
-                                - рекомендации по воспитанию ребенка;
-                                <br>
-                                - необходимости посещения специалиста или врача;
-                                <br>
-                                - рекомендаций по закаливанию, возможности посещения кружков и секций;
-                                <br>
-                                - необходимости посещения и проведения различных процедур и манипуляций, а также задать вопросы об их эффективности и побочных эффектах;
-                                <br>
-                                - необходимости посещения логопеда или психолога, или обращения к иным специалистам;
-                                - коррекций Ваших действий;
-                                <br>
-                                - вопросов, на которые ответить конкретный специалист без осмотра и обследования.
-                            </p>
-                            <p>
-                                <strong>Все предоставленные Услуги являются информационными, носят консультативный характер (не являются медицинскими услугами).</strong>
-                            </p>
-                            <p>
-                                Все консультирующие специалисты являются врачами, логопедами, психологами (список во вкладке «Специалисты»).
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section section_bg_grey">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="section__title">Вопросы и ответы</h2>
-                    <div class="accordion" id="accordionQuestion">
-                        <div class="card card-collapse">
-                            <div class="card-header" id="Questionheading1">
-                                <h2>
-                                    <button class="btn btn-link card-collapse__btn" type="button" data-toggle="collapse" data-target="#Question1" aria-expanded="true" aria-controls="Question1">
-                                        Collapsible Group Item #1
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="Question1" class="collapse show card-collapse__content" aria-labelledby="Questionheading1" data-parent="#accordionQuestion">
-                                <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card card-collapse">
-                            <div class="card-header" id="Questionheading2">
-                                <h2>
-                                    <button class="btn btn-link card-collapse__btn" type="button" data-toggle="collapse" data-target="#Question2" aria-expanded="false" aria-controls="Question2">
-                                        Collapsible Group Item #1
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="Question2" class="collapse card-collapse__content" aria-labelledby="Questionheading2" data-parent="#accordionQuestion">
-                                <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="d-inline-block mt-5 link link_theme_highlight" href="#">Все вопросы и ответы</a>
                 </div>
             </div>
         </div>

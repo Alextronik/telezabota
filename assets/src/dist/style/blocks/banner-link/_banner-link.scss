@@ -1,0 +1,11 @@
+.banner-link{
+	display: block;
+	img {
+		width: 100%;
+		transition: 0.5s;
+		&:hover,
+		&:focus {
+			opacity: 0.8;
+		}
+	}
+}
